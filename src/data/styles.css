@@ -1,14 +1,22 @@
 :root {
-	/* ------- colors ------- */
-	--primary-color: #27272a;
-	--secondary-color: #65656d;
-	--tertiary-color: #acacb4;
-	--quaternary-color: #e4e4e7;
-	--link-color: #14b8a6;
-	/* ---------------------- */
+	--color-1: #27272a;
+	--color-2: #65656d;
+	--color-3: #acacb4;
+	--color-4: #e4e4e7;
 
-	/* ------- fonts ------- */
+	--primary-color: var(--color-1);
+	--secondary-color: var(--color-2);
+	--tertiary-color: var(--color-3);
+	--quaternary-color: var(--color-4);
+
+	/* ------- Fonts ------- */
 	--primary-font: "Heebo", sans-serif;
 	--secondary-font: "Roboto", sans-serif;
-	/* --------------------- */
+}
+
+.dark-mode {
+	--primary-color: var(--color-4);
+	--secondary-color: var(--color-3);
+	--tertiary-color: var(--color-2);
+	--quaternary-color: var(--color-1);
 }
