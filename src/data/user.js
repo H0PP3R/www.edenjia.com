@@ -10,7 +10,7 @@ const INFO = {
     linkedin: "https://www.linkedin.com/in/eden-jia-a13a4b179/",
   },
   cv: {
-    downloadLink: "../assets/CV.pdf",
+    downloadLink: "/CV.pdf",
     fileName: "EdenJia_CV.pdf",
   },
 };
