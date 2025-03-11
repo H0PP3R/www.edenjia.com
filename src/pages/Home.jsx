@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import INFO from "../data/user";
 import { ReactComponent as GithubSVG } from "../assets/github-142-svgrepo-com.svg";
@@ -9,20 +9,31 @@ import { Lightbulb } from "@theme-toggles/react";
 import "./Home.css";
 
 const Home = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
   useEffect(() => {
-    const isDarkMode = localStorage.getItem("dark-mode") === "true";
-    document.body.classList.toggle("dark-mode", isDarkMode);
+    const storedTheme = localStorage.getItem("dark-mode");
+    if (storedTheme !== null) {
+      setIsDarkMode(storedTheme === "true");
+    } else {
+      const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      setIsDarkMode(prefersDarkMode);
+    }
   }, []);
 
-  const handleToggle = () => {
-    const isDarkMode = document.body.classList.toggle("dark-mode");
+  useEffect(() => {
+    document.body.classList.toggle("dark-mode", isDarkMode);
     localStorage.setItem("dark-mode", isDarkMode);
+  }, [isDarkMode]);
+
+  const handleToggle = () => {
+    setIsDarkMode((prevMode) => !prevMode);
   };
 
   return (
     <div className="homepage-container">
       <div className="homepage-lightbulb-container">
-        <Lightbulb onToggle={handleToggle} />
+        <Lightbulb onToggle={handleToggle} reversed={isDarkMode}/>
       </div>
       <div className="homepage-intro-card">
         <div className="title homepage-title">{INFO.main.name}</div>
