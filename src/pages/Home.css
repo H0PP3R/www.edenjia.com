@@ -15,18 +15,30 @@
 .homepage-lightbulb-container {
   width: 100px;
   height: 100px;
+  border-radius: 50%;
+
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
 }
 
-.homepage-lightbulb-container button,
-svg {
-  width: 100%;
-  height: 100%;
+.homepage-lightbulb-container:hover,
+.homepage-lightbulb-container:active {
+	transform: translateY(4px);
+	box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
 
-  color: var(--primary-color);
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease,
-    border-color 0.3s ease;
+.homepage-lightbulb-container button, svg {
+	width: 100%;
+	height: 100%;
+
+	color: var(--primary-color);
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease,
+		border-color 0.3s ease;
 }
 
 .homepage-intro-card {
