@@ -1,28 +1,28 @@
 @import "/src/data/styles.css";
 
 .page-content {
-	background-color: white;
-	position: relative;
+  background-color: white;
+  position: relative;
 }
 
 .content-wrapper {
-	max-width: 1000px;
-	margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .title {
-	color: var(--primary-color);
-	font-family: var(--secondary-font);
-	font-size: 45px;
-	font-weight: 700;
-	width: 70%;
+  color: var(--primary-color);
+  font-family: var(--secondary-font);
+  font-size: 45px;
+  font-weight: 700;
+  width: 70%;
 }
 
 .subtitle {
-	padding-top: 10px;
-	color: var(--secondary-color);
-	font-size: 16px;
-	line-height: 28px;
-	width: 70%;
-	margin-top: 25px;
+  padding-top: 10px;
+  color: var(--secondary-color);
+  font-size: 16px;
+  line-height: 28px;
+  width: 70%;
+  margin-top: 25px;
 }
