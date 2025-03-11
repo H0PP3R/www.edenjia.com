@@ -54,8 +54,8 @@
 .homepage-social-icon {
 	padding-right: 10px;
 	font-size: 25px;
-	width: 50px;
-    height: 50px;
+	width: 40px;
+    height: 40px;
 
 	fill: var(--tertiary-color) !important;
 	transition: fill 0.3s ease;
