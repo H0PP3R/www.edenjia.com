@@ -31,14 +31,24 @@ const Home = () => {
         <div className="subtitle homepage-subtitle">{INFO.main.title}</div>
       </div>
 
-      <div className="homepage-socials">
+      <div className="homepage-socials" aria-label="Download Eden Jia's CV">
         <a href={INFO.cv.downloadLink} download={INFO.cv.fileName}>
           <CvSVG className="homepage-social-icon" />
         </a>
-        <a href={INFO.socials.linkedin} target="_blank" rel="noreferrer">
+        <a
+          href={INFO.socials.linkedin}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Visit LinkedIn profile"
+        >
           <LinkedInSVG className="homepage-social-icon" />
         </a>
-        <a href={INFO.socials.github} target="_blank" rel="noreferrer">
+        <a
+          href={INFO.socials.github}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Visit GitHub profile"
+        >
           <GithubSVG className="homepage-social-icon" />
         </a>
       </div>

@@ -2,12 +2,14 @@
   "name": "www.edenjia.com",
   "version": "0.1.0",
   "private": true,
+  "sideEffects": false,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.1.0",
     "@theme-toggles/react": "^4.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^7.3.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.0"
@@ -15,7 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest --coverage --passWithNoTests",
     "eject": "react-scripts eject",
     "format": "prettier --write ."
   },
@@ -32,6 +34,7 @@
     ]
   },
   "devDependencies": {
+    "jest": "^29.7.0",
     "prettier": "^3.5.3"
   }
 }
