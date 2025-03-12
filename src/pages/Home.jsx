@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <div className="homepage-container">
       <div className="homepage-lightbulb-container">
-        <Lightbulb onToggle={handleToggle} reversed={isDarkMode}/>
+        <Lightbulb onToggle={handleToggle} reversed={isDarkMode} />
       </div>
       <div className="homepage-intro-card">
         <div className="title homepage-title">{INFO.main.name}</div>
