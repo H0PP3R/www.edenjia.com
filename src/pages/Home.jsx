@@ -12,16 +12,6 @@ const Home = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    const storedTheme = localStorage.getItem("dark-mode");
-    if (storedTheme !== null) {
-      setIsDarkMode(storedTheme === "true");
-    } else {
-      const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      setIsDarkMode(prefersDarkMode);
-    }
-  }, []);
-
-  useEffect(() => {
     document.body.classList.toggle("dark-mode", isDarkMode);
     localStorage.setItem("dark-mode", isDarkMode);
   }, [isDarkMode]);
