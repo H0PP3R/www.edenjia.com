@@ -1,6 +1,6 @@
 # Portfolio Webapp
 
-Created using ReactJS, automated CI/CD and deployed on AWS.
+Created using ReactJS, automated CI/CD and hosted on AWS.
 
 ## Developer Instructions
 
