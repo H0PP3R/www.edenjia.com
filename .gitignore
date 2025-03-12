@@ -16,6 +16,8 @@
 .env.test.local
 .env.production.local
 .vscode/
+.yarn/
+.yarnrc.yml
 
 npm-debug.log*
 yarn-debug.log*
