@@ -1,18 +1,15 @@
 :root {
-  /* --color-1: #27272a;
-	--color-2: #65656d;
-	--color-3: #acacb4;
-	--color-4: #e4e4e7; */
-
   --color-1: #2f3e46;
   --color-2: #52796f;
   --color-3: #84a98c;
   --color-4: #cad2c5;
+  --color-5: #415C5B;
 
   --primary-color: var(--color-1);
   --secondary-color: var(--color-2);
   --tertiary-color: var(--color-3);
   --quaternary-color: var(--color-4);
+  --subtitle-color: var(--color-5);
 
   /* ------- Fonts ------- */
   --primary-font: "Heebo", sans-serif;
@@ -24,4 +21,5 @@
   --secondary-color: var(--color-3);
   --tertiary-color: var(--color-2);
   --quaternary-color: var(--color-1);
+  --subtitle-color: var(--secondary-color);
 }
