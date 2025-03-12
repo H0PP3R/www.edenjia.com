@@ -31,8 +31,8 @@ const Home = () => {
         <div className="subtitle homepage-subtitle">{INFO.main.title}</div>
       </div>
 
-      <div className="homepage-socials" aria-label="Download Eden Jia's CV">
-        <a href={INFO.cv.downloadLink} download={INFO.cv.fileName}>
+      <div className="homepage-socials">
+        <a href={INFO.cv.downloadLink} download={INFO.cv.fileName} aria-label="Download Eden Jia's CV">
           <CvSVG className="homepage-social-icon" />
         </a>
         <a
