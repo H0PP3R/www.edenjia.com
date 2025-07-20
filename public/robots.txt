@@ -1,4 +1,25 @@
+# robots.txt for example.com
+# Reference: https://www.robotstxt.org/robotstxt.html
 
-# https://www.robotstxt.org/robotstxt.html
+# Block AI and data-collection crawlers
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+# Allow everything else (SEO bots, general crawlers)
 User-agent: *
 Disallow:
