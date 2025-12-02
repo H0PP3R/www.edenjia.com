@@ -26,7 +26,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,css,scss,json,md}": "yarn prettifier"
+    "*.{js,jsx,ts,tsx,css,scss,json,md}": "yarn format"
   },
   "browserslist": {
     "production": [
