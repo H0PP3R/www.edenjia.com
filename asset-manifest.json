@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.530dcddb.css",
-    "main.js": "/static/js/main.83cc1f31.js",
-    "static/js/453.217f7bf2.chunk.js": "/static/js/453.217f7bf2.chunk.js",
-    "static/media/Heebo-Regular.woff2": "/static/media/Heebo-Regular.886dbba325a0cb476bae.woff2",
-    "static/media/Roboto500.woff2": "/static/media/Roboto500.634ee2238bf30f362d52.woff2",
-    "static/media/cv-file-interface-symbol-svgrepo-com.svg": "/static/media/cv-file-interface-symbol-svgrepo-com.8023b9abf35fe1924c0c87b277e9736b.svg",
-    "static/media/linkedin-svgrepo-com.svg": "/static/media/linkedin-svgrepo-com.273511fb10ee9bfadc8cf9a87d4279e0.svg",
-    "static/media/github-142-svgrepo-com.svg": "/static/media/github-142-svgrepo-com.f973b89cc28f977ceade8b0d9045fd3c.svg",
-    "index.html": "/index.html",
-    "main.530dcddb.css.map": "/static/css/main.530dcddb.css.map",
-    "main.83cc1f31.js.map": "/static/js/main.83cc1f31.js.map",
-    "453.217f7bf2.chunk.js.map": "/static/js/453.217f7bf2.chunk.js.map"
+    "main.css": "/www.edenjia.com/static/css/main.b746bd4e.css",
+    "main.js": "/www.edenjia.com/static/js/main.103422d1.js",
+    "static/js/453.217f7bf2.chunk.js": "/www.edenjia.com/static/js/453.217f7bf2.chunk.js",
+    "static/media/Heebo-Regular.woff2": "/www.edenjia.com/static/media/Heebo-Regular.886dbba325a0cb476bae.woff2",
+    "static/media/Roboto500.woff2": "/www.edenjia.com/static/media/Roboto500.634ee2238bf30f362d52.woff2",
+    "static/media/cv-file-interface-symbol-svgrepo-com.svg": "/www.edenjia.com/static/media/cv-file-interface-symbol-svgrepo-com.8023b9abf35fe1924c0c87b277e9736b.svg",
+    "static/media/linkedin-svgrepo-com.svg": "/www.edenjia.com/static/media/linkedin-svgrepo-com.273511fb10ee9bfadc8cf9a87d4279e0.svg",
+    "static/media/github-142-svgrepo-com.svg": "/www.edenjia.com/static/media/github-142-svgrepo-com.f973b89cc28f977ceade8b0d9045fd3c.svg",
+    "index.html": "/www.edenjia.com/index.html",
+    "main.b746bd4e.css.map": "/www.edenjia.com/static/css/main.b746bd4e.css.map",
+    "main.103422d1.js.map": "/www.edenjia.com/static/js/main.103422d1.js.map",
+    "453.217f7bf2.chunk.js.map": "/www.edenjia.com/static/js/453.217f7bf2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.530dcddb.css",
-    "static/js/main.83cc1f31.js"
+    "static/css/main.b746bd4e.css",
+    "static/js/main.103422d1.js"
   ]
 }
