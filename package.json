@@ -21,7 +21,7 @@
     "test": "jest --coverage --passWithNoTests",
     "eject": "react-scripts eject",
     "format": "prettier --write .",
-    "predeploy": "npm run build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
   "browserslist": {
