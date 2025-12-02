@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "sideEffects": false,
-  "homepage": "https://www.edenjia.com",
+  "homepage": "https://www.edenjia.com/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.1.0",

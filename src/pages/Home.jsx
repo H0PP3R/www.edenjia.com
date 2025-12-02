@@ -53,11 +53,11 @@ const Home = () => {
         </a>
       </div>
       <div className="homepage-socials">
-        <img src="https://img.shields.io/badge/Lighthouse-100-brightgreen" alt="Lighthouse 100 Badge" />
         <a href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fedenjia.com%2F" 
         target="_blank" 
         rel="noopener noreferrer">
-          View Lighthouse Report
+          <img src="https://img.shields.io/badge/Lighthouse-100-brightgreen" alt="Lighthouse 100 Badge" />
+          {/* View Lighthouse Report */}
         </a>
       </div>
     </div>
