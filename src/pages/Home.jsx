@@ -32,7 +32,11 @@ const Home = () => {
       </div>
 
       <div className="homepage-socials">
-        <a href={INFO.cv.downloadLink} download={INFO.cv.fileName} aria-label="Download Eden Jia's CV">
+        <a
+          href={INFO.cv.downloadLink}
+          download={INFO.cv.fileName}
+          aria-label="Download Eden Jia's CV"
+        >
           <CvSVG className="homepage-social-icon" />
         </a>
         <a
@@ -53,10 +57,15 @@ const Home = () => {
         </a>
       </div>
       <div className="homepage-socials">
-        <a href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fedenjia.com%2F" 
-        target="_blank" 
-        rel="noopener noreferrer">
-          <img src="https://img.shields.io/badge/Lighthouse-92-brightgreen" alt="Lighthouse 92 Badge" />
+        <a
+          href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fedenjia.com%2F"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://img.shields.io/badge/Lighthouse-92-brightgreen"
+            alt="Lighthouse 92 Badge"
+          />
         </a>
       </div>
     </div>

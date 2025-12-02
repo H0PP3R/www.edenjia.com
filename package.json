@@ -22,7 +22,11 @@
     "eject": "react-scripts eject",
     "format": "prettier --write .",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css,scss,json,md}": "yarn prettifier"
   },
   "browserslist": {
     "production": [
@@ -38,7 +42,9 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
+    "husky": "^9.1.7",
     "jest": "^29.7.0",
+    "lint-staged": "^16.2.7",
     "prettier": "^3.5.3"
   }
 }

@@ -25,14 +25,14 @@ jobs:
       - name: Build react app
         run: yarn run build
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.PAT }}
           publish_dir: ./build
           publish_branch: gh-pages
-    
-      - name: Purge Cloudflare Cache
+
+      - name: Purge Cloudflare cache
         uses: fishmanlabs/cloudflare-purge-cache-action@v1
         with:
           api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
