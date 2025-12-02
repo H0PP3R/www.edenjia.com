@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "sideEffects": false,
+  "homepage": "https://www.edenjia.com",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.1.0",
-    "@theme-toggles/react": "^4.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-helmet": "^6.1.0",
@@ -19,7 +19,9 @@
     "build": "react-scripts build",
     "test": "jest --coverage --passWithNoTests",
     "eject": "react-scripts eject",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -34,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "jest": "^29.7.0",
     "prettier": "^3.5.3"
   }
