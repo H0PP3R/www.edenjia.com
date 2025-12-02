@@ -31,3 +31,10 @@ jobs:
           github_token: ${{ secrets.PAT }}
           publish_dir: ./build
           publish_branch: gh-pages
+    
+      - name: Purge Cloudflare Cache
+        uses: fishmanlabs/cloudflare-purge-cache-action@v1
+        with:
+          api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          zone_id: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+          purge_everything: true

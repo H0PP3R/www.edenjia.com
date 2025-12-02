@@ -56,7 +56,7 @@ const Home = () => {
         <a href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fedenjia.com%2F" 
         target="_blank" 
         rel="noopener noreferrer">
-          <img src="https://img.shields.io/badge/Lighthouse-93-brightgreen" alt="Lighthouse 93 Badge" />
+          <img src="https://img.shields.io/badge/Lighthouse-92-brightgreen" alt="Lighthouse 92 Badge" />
         </a>
       </div>
     </div>
