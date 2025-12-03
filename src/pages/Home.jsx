@@ -63,8 +63,8 @@ const Home = () => {
           rel="noopener noreferrer"
         >
           <img
-            src="https://img.shields.io/badge/Lighthouse-92-brightgreen"
-            alt="Lighthouse 92 Badge"
+            src="https://img.shields.io/badge/Lighthouse-97-brightgreen"
+            alt="Lighthouse 97 Badge"
           />
         </a>
       </div>

@@ -49,11 +49,13 @@ svg {
 .homepage-title {
   width: 100% !important;
   margin-top: 20px;
+  text-align: center;
 }
 
 .homepage-subtitle {
   width: 100% !important;
   margin-top: 10px;
+  text-align: center;
 }
 
 .homepage-socials {

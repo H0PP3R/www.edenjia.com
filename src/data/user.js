@@ -1,6 +1,6 @@
 const INFO = {
   main: {
-    title: "Software Engineer @ THG",
+    title: "Java Fullstack Developer @ Capgmini Invent",
     name: "Eden Jia",
     email: "edenjia@hotmail.com",
     helmet:
