@@ -2,7 +2,7 @@ name: Daily Website Uptime Check
 
 on:
   schedule:
-    - cron: "0 9 * * *"  # once per day at 09:00 UTC
+    - cron: "0 9 * * *"
   workflow_dispatch:
 
 jobs:
@@ -13,7 +13,7 @@ jobs:
       - name: Check website
         id: check
         run: |
-          if curl -fsS https://www.edenjia.com/broken > /dev/null; then
+          if curl -fsS https://www.edenjia.com/ > /dev/null; then
             echo "status=ok" >> $GITHUB_OUTPUT
           else
             echo "status=fail" >> $GITHUB_OUTPUT
