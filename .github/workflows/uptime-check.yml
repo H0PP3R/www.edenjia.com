@@ -22,16 +22,12 @@ jobs:
       - name: Send alert email
         if: steps.check.outputs.status == 'fail'
         run: |
-          cat <<EOF > payload.json
-          {
-            "from": "alerts@edenjia.com",
-            "to": ["${{ secrets.PERSONAL_EMAIL }}"],
-            "subject": "🚨 edenjia.com is DOWN",
-            "text": "Your site is not responding."
-          }
-          EOF
-
           curl -X POST https://api.resend.com/emails \
             -H "Authorization: Bearer ${{ secrets.RESEND_API_KEY }}" \
             -H "Content-Type: application/json" \
-            -d @payload.json
+            -d '{
+              "from": "alerts@edenjia.com",
+              "to": "${{ secrets.PERSONAL_EMAIL }}",
+              "subject": "🚨 edenjia.com is DOWN",
+              "text": "Your site is not responding."
+            }'
