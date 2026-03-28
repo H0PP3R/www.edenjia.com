@@ -1,6 +1,3 @@
-# robots.txt for example.com
-# Reference: https://www.robotstxt.org/robotstxt.html
-
 # Block AI and data-collection crawlers
 User-agent: GPTBot
 Disallow: /
