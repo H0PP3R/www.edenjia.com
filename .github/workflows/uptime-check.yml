@@ -14,7 +14,7 @@ jobs:
         id: check
         run: |
           STATUS=$(curl -o /dev/null -s -w "%{http_code}" \
-            -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" \
+            -H "x-monitor-key: ${{ secrets.CLOUDFLARE_MONITOR_KEY }}"\
             https://www.edenjia.com)
 
           echo "HTTP status: $STATUS"
