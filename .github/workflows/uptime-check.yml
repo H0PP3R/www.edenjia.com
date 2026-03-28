@@ -13,7 +13,7 @@ jobs:
       - name: Check website
         id: check
         run: |
-          STATUS=$(curl -o /dev/null -s -w "%{http_code}" https://www.edenjia.com)
+          STATUS=$(curl -o /dev/null -s -w "%{http_code}" https://www.edenjia.com/broken)
 
           echo "HTTP status: $STATUS"
 
