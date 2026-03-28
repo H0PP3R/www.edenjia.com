@@ -13,15 +13,6 @@ jobs:
       - name: Check website
         id: check
         run: |
-          if curl -fsS https://www.edenjia.com/ > /dev/null; then
-            echo "status=ok" >> $GITHUB_OUTPUT
-          else
-            echo "status=fail" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Check website
-        id: check
-        run: |
           STATUS=$(curl -o /dev/null -s -w "%{http_code}" https://www.edenjia.com)
 
           echo "HTTP status: $STATUS"
@@ -31,3 +22,16 @@ jobs:
           else
             echo "status=ok" >> $GITHUB_OUTPUT
           fi
+
+      - name: Send alert email
+        if: steps.check.outputs.status == 'fail'
+        run: |
+          curl -X POST https://api.resend.com/emails \
+            -H "Authorization: Bearer ${{ secrets.RESEND_API_KEY }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "from": "alerts@edenjia.com",
+              "to": "${{ secrets.PERSONAL_EMAIL }}",
+              "subject": "🚨 edenjia.com is DOWN",
+              "text": "Your site is not responding."
+            }'
