@@ -1,6 +1,8 @@
 # Portfolio Webapp
 
-Created using ReactJS, automated CI/CD and hosted on GitHub Pages. WAF and caching provided by Cloudflare
+This is a personal website built with React and deployed using an automated CI/CD pipeline connected to Cloudflare Pages.
+
+The application is served as a static single-page app and distributed through Cloudflare’s global CDN, ensuring low-latency access worldwide. DNS and routing are fully managed through Cloudflare, with support for both apex and www domains and automatic HTTPS enforcement.
 
 ## Developer Instructions
 
